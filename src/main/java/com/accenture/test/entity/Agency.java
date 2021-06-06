@@ -1,6 +1,7 @@
 package com.accenture.test.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,13 +20,13 @@ public class Agency implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false)
+
     private String name;
 
-    @Column(nullable = false)
-    private String Address;
 
-    @Column(nullable = false)
-    private int agencyNumber;
+    private String address;
+
+
+    private String agencyNumber;
 
 }

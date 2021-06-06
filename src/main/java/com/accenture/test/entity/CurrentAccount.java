@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Data
 @Table(name = "currentAccount")
 public class CurrentAccount implements Serializable {
+    public static final Long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
